@@ -4,7 +4,7 @@ async function main() {
   const [deployer] = await ethers.getSigners();
 
   console.log(`Deploying contracts with the account: ${deployer.address}`);
-const BUNNTokenAddress = 'BUNN_TOKEN_ADRESS';
+const BUNNTokenAddress = '0x1057cC48F7C7DfE7542B7697e3C73e71557068A8';
 
 //Deploy BUNNICO contract
 const BUNNICO = await ethers.getContractFactory('BUNNICO');

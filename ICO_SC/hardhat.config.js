@@ -13,16 +13,17 @@ module.exports = {
     sepolia: {
       url: "https://polygon-mainnet.g.alchemy.com/v2/Y9NftxusBbROGJsCM0AHyXl5jvR6EALm",
       accounts: [process.env.PRIVATE_KEY],
-      chainId: 11155111,
+      chainId: 137,
     },
   },
   etherscan: {
-    apiKey: 'FE921B5VUFESIZ5UPTUQBWES8V4NUIPD8S',
+    apiKey: [process.env.ETHERSCAN_API_KEY],
+    polygon: [process.env.ETHERSCAN_API_KEY],
   },
   namedAccounts: {
     deployer: {
       default: 0,
-      11155111: 0,
+      137: 0,
     },
   },
 };
