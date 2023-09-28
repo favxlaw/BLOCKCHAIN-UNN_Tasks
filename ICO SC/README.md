@@ -66,4 +66,4 @@ npx hardhat run scripts/deploy.js --network localhost
 
 ## Acknowledgments
 This project is based on the OpenZeppelin smart contract libraries.
-Special thanks to the Ethereum community for their contributions to the ecosystem.
+Special thanks to the Ethereum community and Blockchain UNN for their contributions to the ecosystem.
