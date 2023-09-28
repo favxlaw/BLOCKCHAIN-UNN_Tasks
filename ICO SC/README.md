@@ -62,6 +62,7 @@ To deploy the contract to a local development network (e.g., Hardhat's local net
 
 ```shell
 npx hardhat run scripts/deploy.js --network localhost
+ ```
 
 ## Acknowledgments
 This project is based on the OpenZeppelin smart contract libraries.
