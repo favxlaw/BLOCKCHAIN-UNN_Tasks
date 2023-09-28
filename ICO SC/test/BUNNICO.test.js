@@ -1,4 +1,5 @@
 const { expect } = require("chai");
+const { ethers } = require("hardhat"); 
 
 //Describe the tests for the BUNNICO contract
 describe("BUNNICO contract", function () {
@@ -13,7 +14,7 @@ before(async function (){
     
 // Deploy the BUNNICO contract
 const BUNNICOFactory = await ethers.getContractFactory("BUNNICO");
-BUNNICO = await BUNNICOFactory.deploy(BUNNToken.address);
+BUNNICO = await BUNNICOFactory.deploy(deployer.address);
 });
 
 //Check if a user can register for the ICO
@@ -28,7 +29,7 @@ it("Don't allow user to register after the ICO ends", async function (){
     await BUNNICO.endICO();
 
 //Trying to register after ICO ends
-await expect(BUNNICO.connect(User).register({ value: ethers.utils.parseEther("0.01")}))
+await expect(BUNNICO.connect(User).register({ value: ethers.parseEther("0.01")}))
     .to.be.revertedWith("Sorry ICO has ended.");
 });
 

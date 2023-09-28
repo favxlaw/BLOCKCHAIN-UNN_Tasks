@@ -3,7 +3,7 @@ pragma solidity ^0.8.19;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract ICO_token{
+contract BUNNICO{
     //Storage Variables
     address public admin; //address holding the ERC20 tokens
     address public token_address; // address of the the deployed BUNN token
